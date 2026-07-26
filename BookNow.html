@@ -1,0 +1,937 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+<title>E.spa Esthetics | Book Now</title>
+<style>
+main.booking-page {
+	display: block;
+	width: 90%;
+	max-width: 1100px;
+	margin: 40px auto;
+	padding: 35px;
+	color: #645B58;
+	background-color: #FBF6F0;
+	border-radius: 10px;
+}
+	.logo-area {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+.logo-area img {
+	width: 105px;
+	height: 105px;
+	object-fit: cover;
+}
+.booking-intro {
+	max-width: 900px;
+	margin: 0 auto 45px;
+	text-align: center;
+}
+
+.booking-label {
+	margin: 0;
+	color: #A97E64;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+.booking-intro h2 {
+	margin: 5px 0;
+	color: #392E2A;
+	font-family: Georgia, serif;
+	font-size: 48px;
+	font-weight: bold;
+}
+.booking-line {
+	width: 100px;
+	height: 2px;
+	margin: 20px auto;
+	background-color: #C79482;
+}
+
+.booking-intro > p:last-child {
+	max-width: 800px;
+	margin: auto;
+	font-size: 17px;
+	line-height: 1.8;
+}
+
+.intake-form fieldset {
+	margin: 0 0 30px;
+	padding: 35px;
+	background-color: #FFFDFC;
+	border: 2px solid #E3D4CC;
+	border-radius: 10px;
+}
+.intake-form legend {
+	padding: 0 15px;
+	color: #392E2A;
+	font-family: Georgia, serif;
+	font-size: 28px;
+	font-weight: bold;
+}
+.form-row {
+	display: flex;
+	gap: 25px;
+	width: 100%;
+}
+
+.form-field {
+	flex: 1;
+	margin-bottom: 20px;
+}
+.intake-form label,
+.question p {
+	color: #806A62;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.form-field > label {
+	display: block;
+	margin-bottom: 6px;
+}
+
+.intake-form input[type="text"],
+.intake-form input[type="email"],
+.intake-form input[type="tel"],
+.intake-form input[type="date"],
+.intake-form select,
+.intake-form textarea {
+	display: block;
+	width: 100%;
+	padding: 14px;
+	color: #54443E;
+	background-color: #F3E8E2;
+	border: 1px solid #DCCAC1;
+	border-radius: 7px;
+	font-family: inherit;
+	font-size: 16px;
+}
+
+.intake-form textarea {
+	resize: vertical;
+.question {
+	margin: 25px 0;
+}
+
+.question p {
+	margin: 0 0 8px;
+}
+
+.question label {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	margin-right: 25px;
+	color: #645B58;
+	font-size: 16px;
+	letter-spacing: 0;
+	text-transform: none;
+}
+
+.question input[type="radio"] {
+	width: 20px;
+	height: 20px;
+	accent-color: #A97E64;
+}
+
+.consent-option {
+	display: flex;
+	align-items: flex-start;
+	gap: 15px;
+	margin: 20px 0;
+	color: #645B58 !important;
+	font-size: 16px !important;
+	font-weight: normal !important;
+	letter-spacing: 0 !important;
+	line-height: 1.6;
+	text-transform: none !important;
+}
+
+.consent-option input {
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+	margin-top: 4px;
+	accent-color: #A97E64;
+}
+
+/* SIGNATURE */
+
+.signature-row {
+	margin-top: 35px;
+}
+
+#signature {
+	font-family: Georgia, serif;
+	font-style: italic;
+}
+
+/* SUBMIT BUTTON */
+
+.intake-button {
+	display: block;
+	width: 100%;
+	margin-top: 25px;
+	padding: 16px;
+	color: #FFFFFF;
+	background-color: #A97E64;
+	border: 0;
+	border-radius: 7px;
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.intake-button:hover {
+	background-color: #895F4C;
+}
+
+/* CONFIRMATION MESSAGE */
+
+.confirmation-message {
+	margin: 15px 0 0;
+	color: #8D7065;
+	font-size: 15px;
+	text-align: center;
+}
+
+/* BOOKING FORM ON PHONE */
+
+@media screen and (max-width: 700px) {
+
+	main.booking-page {
+		width: 94%;
+		padding: 20px 15px;
+	}
+
+	.booking-intro h2 {
+		font-size: 38px;
+	}
+
+	.intake-form fieldset {
+		padding: 25px 18px;
+	}
+
+	.intake-form legend {
+		font-size: 23px;
+	}
+
+	.form-row {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.question label {
+		margin-bottom: 8px;
+	}
+
+	.intake-button {
+		font-size: 14px;
+	}
+}
+	</style>
+	</head>
+	
+<body>
+	<header>
+	
+	<h1>E. Spa Esthetics</h1>
+    <div class="slogan">
+		Relax <span>•</span> Refresh <span>•</span> Renew</div>
+	
+  <nav class="nav-menu">
+    <a href="index.html">Home</a>&nbsp; 
+    <a href="Services.html">Services</a> &nbsp; 
+    <a href="Gallery.html">Gallery</a>&nbsp; 
+    <a href="Contact.html">Contact</a>&nbsp;  
+    <a href="BookNow.html" class="book-now">Book Now</a>
+  </nav>
+	
+	<div class="logo-area">
+		<img src="images/E. spa logo.png" alt="E.spa Esthetics logo">
+	</div>
+	
+	</header>
+	
+	<main class="booking-page">
+
+	<section class="booking-intro">
+
+		<p class="booking-label">
+			Appointments
+		</p>
+
+		<h2>Book With Me</h2>
+
+		<div class="booking-line"></div>
+
+		<p>
+			Please complete this intake form before your first
+			appointment. Your information helps me provide the
+			safest and most personalized experience for you.
+		</p>
+
+	</section>
+
+	<form class="intake-form" action="#" method="post">
+
+
+		<fieldset>
+
+			<legend>Personal Information</legend>
+
+			<div class="form-row">
+
+				<div class="form-field">
+
+					<label for="first-name">
+						First Name
+					</label>
+
+					<input type="text"
+						   id="first-name"
+						   name="first-name"
+						   required>
+
+				</div>
+
+				<div class="form-field">
+
+					<label for="last-name">
+						Last Name
+					</label>
+
+					<input type="text"
+						   id="last-name"
+						   name="last-name"
+						   required>
+
+				</div>
+
+			</div>
+
+			<div class="form-row">
+
+				<div class="form-field">
+
+					<label for="birth-date">
+						Date of Birth
+					</label>
+
+					<input type="date"
+						   id="birth-date"
+						   name="birth-date"
+						   required>
+
+				</div>
+
+				<div class="form-field">
+
+					<label for="booking-phone">
+						Phone Number
+					</label>
+
+					<input type="tel"
+						   id="booking-phone"
+						   name="booking-phone"
+						   required>
+
+				</div>
+
+			</div>
+
+			<div class="form-field">
+
+				<label for="booking-email">
+					Email Address
+				</label>
+
+				<input type="email"
+					   id="booking-email"
+					   name="booking-email"
+					   required>
+
+			</div>
+
+		</fieldset>
+
+		<fieldset>
+
+			<legend>Appointment Details</legend>
+
+			<div class="form-field">
+
+				<label for="requested-service">
+					Service Requested
+				</label>
+
+				<select id="requested-service"
+						name="requested-service"
+						required>
+
+					<option value="">
+						Select a service…
+					</option>
+
+					<option value="Signature Facial">
+						Signature Facial
+					</option>
+
+					<option value="Hydrating Glow Facial">
+						Hydrating Glow Facial
+					</option>
+
+					<option value="Lash Lift">
+						Lash Lift
+					</option>
+
+					<option value="Lash Tint">
+						Lash Tint
+					</option>
+
+					<option value="Brow Shaping and Tint">
+						Brow Shaping and Tint
+					</option>
+
+					<option value="Classic Eyelash Extensions">
+						Classic Eyelash Extensions
+					</option>
+
+					<option value="Volume Eyelash Extensions">
+						Volume Eyelash Extensions
+					</option>
+
+					<option value="Eyelash Extension Fill">
+						Eyelash Extension Fill
+					</option>
+
+					<option value="False Lash Application">
+						False Lash Application
+					</option>
+
+					<option value="Face Waxing">
+						Face Waxing
+					</option>
+
+					<option value="Body Waxing">
+						Body Waxing
+					</option>
+
+					<option value="Brazilian or Bikini Waxing">
+						Brazilian or Bikini Waxing
+					</option>
+
+				</select>
+
+			</div>
+
+			<div class="form-row">
+
+				<div class="form-field">
+
+					<label for="preferred-date">
+						Preferred Date
+					</label>
+
+					<input type="date"
+						   id="preferred-date"
+						   name="preferred-date"
+						   required>
+
+				</div>
+
+				<div class="form-field">
+
+					<label for="preferred-time">
+						Preferred Time
+					</label>
+
+					<select id="preferred-time"
+							name="preferred-time"
+							required>
+
+						<option value="">
+							Select a time…
+						</option>
+
+						<option value="Morning">
+							Morning
+						</option>
+
+						<option value="Afternoon">
+							Afternoon
+						</option>
+
+						<option value="Evening">
+							Evening
+						</option>
+
+					</select>
+
+				</div>
+
+			</div>
+
+			<div class="form-row">
+
+				<div class="form-field">
+
+					<label for="first-visit">
+						Is This Your First Visit?
+					</label>
+
+					<select id="first-visit"
+							name="first-visit"
+							required>
+
+						<option value="">
+							Select…
+						</option>
+
+						<option value="Yes">Yes</option>
+
+						<option value="No">No</option>
+
+					</select>
+
+				</div>
+
+				<div class="form-field">
+
+					<label for="referral">
+						How Did You Hear About Me?
+					</label>
+
+					<select id="referral"
+							name="referral">
+
+						<option value="">
+							Select…
+						</option>
+
+						<option value="Instagram">
+							Instagram
+						</option>
+
+						<option value="Friend or Family">
+							Friend or Family
+						</option>
+
+						<option value="Google">
+							Google
+						</option>
+
+						<option value="Other">
+							Other
+						</option>
+
+					</select>
+
+				</div>
+
+			</div>
+
+		</fieldset>
+
+		<fieldset>
+
+			<legend>Skin &amp; Health History</legend>
+
+			<div class="form-field">
+
+				<label for="skin-concern">
+					What Is Your Main Skin Concern?
+				</label>
+
+				<select id="skin-concern"
+						name="skin-concern">
+
+					<option value="">
+						Select…
+					</option>
+
+					<option value="Acne">
+						Acne
+					</option>
+
+					<option value="Dryness">
+						Dryness
+					</option>
+
+					<option value="Sensitivity">
+						Sensitivity
+					</option>
+
+					<option value="Dark Spots">
+						Dark Spots
+					</option>
+
+					<option value="Fine Lines">
+						Fine Lines
+					</option>
+
+					<option value="Other">
+						Other
+					</option>
+
+				</select>
+
+			</div>
+
+			<div class="question">
+
+				<p>
+					Do you have any known skin allergies or sensitivities?
+				</p>
+
+				<label>
+					<input type="radio"
+						   name="skin-allergies"
+						   value="Yes"
+						   required>
+					Yes
+				</label>
+
+				<label>
+					<input type="radio"
+						   name="skin-allergies"
+						   value="No">
+					No
+				</label>
+
+			</div>
+
+			<div class="question">
+
+				<p>
+					Are you currently taking medications that affect
+					the skin, such as Accutane, retinoids, or blood thinners?
+				</p>
+
+				<label>
+					<input type="radio"
+						   name="medications"
+						   value="Yes"
+						   required>
+					Yes
+				</label>
+
+				<label>
+					<input type="radio"
+						   name="medications"
+						   value="No">
+					No
+				</label>
+
+			</div>
+
+			<div class="question">
+
+				<p>
+					Have you had any recent facial procedures,
+					peels, or laser treatments in the past two weeks?
+				</p>
+
+				<label>
+					<input type="radio"
+						   name="recent-procedures"
+						   value="Yes"
+						   required>
+					Yes
+				</label>
+
+				<label>
+					<input type="radio"
+						   name="recent-procedures"
+						   value="No">
+					No
+				</label>
+
+			</div>
+
+			<div class="question">
+
+				<p>
+					Are you pregnant or nursing?
+				</p>
+
+				<label>
+					<input type="radio"
+						   name="pregnant-nursing"
+						   value="Yes"
+						   required>
+					Yes
+				</label>
+
+				<label>
+					<input type="radio"
+						   name="pregnant-nursing"
+						   value="No">
+					No
+				</label>
+
+			</div>
+
+			<div class="question">
+
+				<p>
+					Do you have eczema, psoriasis, rosacea,
+					or active cold sores?
+				</p>
+
+				<label>
+					<input type="radio"
+						   name="skin-conditions"
+						   value="Yes"
+						   required>
+					Yes
+				</label>
+
+				<label>
+					<input type="radio"
+						   name="skin-conditions"
+						   value="No">
+					No
+				</label>
+
+			</div>
+
+			<div class="question">
+
+				<p>
+					Do you wear contact lenses?
+					Important for lash services.
+				</p>
+
+				<label>
+					<input type="radio"
+						   name="contact-lenses"
+						   value="Yes"
+						   required>
+					Yes
+				</label>
+
+				<label>
+					<input type="radio"
+						   name="contact-lenses"
+						   value="No">
+					No
+				</label>
+
+			</div>
+
+			<div class="form-field">
+
+				<label for="allergies-medications">
+					Please List Any Allergies, Medications,
+					or Skin Conditions
+				</label>
+
+				<textarea id="allergies-medications"
+						  name="allergies-medications"
+						  rows="5"
+						  placeholder="For example: allergic to latex, taking medication, or have rosacea."></textarea>
+
+			</div>
+
+			<div class="form-field">
+
+				<label for="additional-information">
+					Anything Else I Should Know Before Your Appointment?
+				</label>
+
+				<textarea id="additional-information"
+						  name="additional-information"
+						  rows="5"
+						  placeholder="Share anything that will help me give you the best experience."></textarea>
+
+			</div>
+
+		</fieldset>
+
+		<fieldset>
+
+			<legend>Consent &amp; Agreement</legend>
+
+			<label class="consent-option">
+
+				<input type="checkbox"
+					   name="information-accurate"
+					   required>
+
+				<span>
+					I confirm that the information provided above
+					is accurate and complete to the best of my knowledge.
+				</span>
+
+			</label>
+
+			<label class="consent-option">
+
+				<input type="checkbox"
+					   name="respect-studio"
+					   required>
+
+				<span>
+					I understand that E.spa Esthetics is a private,
+					home-based studio, and I agree to treat the
+					space with respect.
+				</span>
+
+			</label>
+
+			<label class="consent-option">
+
+				<input type="checkbox"
+					   name="cancellation-policy"
+					   required>
+
+				<span>
+					I understand that a 24-hour cancellation notice
+					is required. Late cancellations or no-shows
+					may result in a fee.
+				</span>
+
+			</label>
+
+			<label class="consent-option">
+
+				<input type="checkbox"
+					   name="service-consent"
+					   required>
+
+				<span>
+					I consent to receive the requested esthetic
+					services and understand that results may vary.
+				</span>
+
+			</label>
+
+			<label class="consent-option">
+
+				<input type="checkbox"
+					   name="photo-permission">
+
+				<span>
+					I give permission for before-and-after photos
+					to be taken for portfolio use. My face will
+					not be shown without additional consent.
+				</span>
+
+			</label>
+
+			<div class="form-row signature-row">
+
+				<div class="form-field">
+
+					<label for="signature">
+						Full Name (Signature)
+					</label>
+
+					<input type="text"
+						   id="signature"
+						   name="signature"
+						   placeholder="Type your full name"
+						   required>
+
+				</div>
+
+				<div class="form-field">
+
+					<label for="todays-date">
+						Today's Date
+					</label>
+
+					<input type="date"
+						   id="todays-date"
+						   name="todays-date"
+						   required>
+
+				</div>
+
+			</div>
+
+			<button type="submit" class="intake-button">
+				Submit My Intake &amp; Request Appointment
+			</button>
+
+			<p class="confirmation-message">
+				I'll confirm your appointment within 24 hours.
+				Can't wait to meet you!
+			</p>
+
+		</fieldset>
+
+	</form>
+
+</main>
+	
+	<footer class="site-tooter"> 
+	<div class="footer-top">
+	
+	<section class="footer-business">
+		<div class="footer-logo-area">
+		<img src="images/E. spa logo.png" alt="E. spa logo.png">
+	</div>
+	<div>
+	  <h2>E.spa Esthetics</h2>
+		
+	<p class="footer-slogan">
+	  <p>Relax • Refresh • Renew</p>
+	</p>
+	</div>
+	<p class="footer-description">
+	Boutique skin care studio dedicated to the art
+	of radiant, healthy skin.
+	</p>
+		</section>
+		<section class="footer-section">
+		<h2>Contact</h2>
+     <p> 
+	    <span class="contact-icon">☎</span>
+		 <a href="tel: 5558675309">(555) 867-5309</a>
+	 </p>
+	<p>
+		<span class="contact-icon">✉</span>
+	 <a href="mailto:hello@espaesthetics.com">
+					hello@espaesthetics.com
+		</a>
+	 </p>
+	<p>
+		<span class="contact-icon">⌖</span>
+		123 Bloom Street<br>
+		Oklahoma City, OK 73159
+	</p>
+	</section>
+	
+	<section class="footer-social">
+<h2>Follow Us</h2>
+<div class="social-buttons">
+<a href="#" class="image/instgram.png" aria-label="Visit E.spa Esthetics on Instagram">@e.spaesthetics
+</a>
+
+</div>
+	</section>
+<div class="footer-bottom">
+	<p>Crafted with care for beautiful skin.</p>
+<small>
+	<em>Copyright &copy; 2026 E.spa Esthetics.All rights reserved.</em>
+</small>
+	</div>
+</div>
+</footer>
+</body>
+</html>

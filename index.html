@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+<title>E.spa Esthetics | Home</title>
+<style>
+	main {
+		color: #5D3C3C;
+		display: grid;
+		grid-template-columns: 250px 1fr;
+		gap: 45px;
+		max-width: 1500px;
+		margin: auto;
+		padding: 50px 40px;
+	}
+	.logo-area {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+.logo-area img {
+	width: 105px;
+	height: 105px;
+	object-fit: cover;
+}
+	.sidebar {
+		width: 250px;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+	.card {
+		width: 100%;
+		padding: 15px;
+		background-color: #fffdfc;
+		border: 1px solid #e3d4cc;
+		border-radius: 10px;
+	}
+	.card h2 {
+		margin-top:0;
+		padding-bottom: 10px;
+		color: #A97E64;
+		border-bottom: 1px solid #E3D4CC;
+		font-family: 20px;
+		font-weight: normal;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+	}
+	.hours {
+		width: 100%;
+		border: solid;
+	}
+	.hours td {
+	font-size: 15px;
+	padding: 2px;
+	color:#54443E;
+	font-weight:500;
+	text-align:left;
+	}
+	.special {
+		background-color: #F8E8DF;
+	}
+	.special h3{
+		margin: 5px 0;
+		color: #392E2A;
+		font-family: georgia, serif;
+		font-size: 15px;
+		font-style: italic;
+		font-weight: normal;
+	}
+	.special-title {
+		margin-bottom: 5px;
+		color: #A97E64;
+		letter-spacing: 4px;
+		text-transform: uppercase;
+	}
+	.price {
+		color: #9B6D56;
+		font-size: 15px;
+		font-weight: bold;
+	}
+	.special-button {
+		display: block;
+		padding: 12px;
+		color: antiquewhite;
+		background-color: #C79482;
+		border-radius: 7px;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+	.review {
+		color: #4D413D;
+		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+		font-size: 15px;
+		font-style: italic;
+	}
+	.reviewer {
+		color: #A97E64;
+		font-weight: bold;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+	.main-content {
+		min-width: 5px;
+	}
+	.service-booking {
+	margin-top: 50px;
+	padding: 35px;
+	background-color: #EADDD6;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.service-booking h3 {
+	margin-top: 0;
+	color: #392E2A;
+}
+
+.service-booking a {
+	display: inline-block;
+	padding: 12px 25px;
+	color: white;
+	background-color: #A97E64;
+	border-radius: 7px;
+	text-decoration: none;
+}
+
+.service-booking a:hover {
+	background-color: #895F4C;
+}
+</style>
+</head>
+
+<body>
+<header>
+	
+	<h1>E. Spa Esthetics</h1>
+    <div class="slogan">
+		Relax <span>•</span> Refresh <span>•</span> Renew</div>
+	
+  <nav class="nav-menu">
+    <a href="index.html">Home</a>&nbsp; 
+    <a href="Services.html">Services</a> &nbsp; 
+    <a href="Gallery.html">Gallery</a>&nbsp; 
+    <a href="Contact.html">Contact</a>&nbsp;  
+    <a href="BookNow.html" class="book-now">Book Now</a>
+  </nav>
+	
+	<div class="logo-area">
+		<img src="images/E. spa logo.png" alt="E.spa Esthetics logo">
+	</div>
+	
+	</header>
+	
+	<main>
+	<aside class="sidebar">
+		<section class="card">
+			<h2>Business Hours</h2>
+		<table class="hours">
+		<tr>
+		<td>Monday</td>
+		<td>10am-6pm</td>
+		</tr>
+		<tr>
+		<td>Tuesday</td>
+		<td>10am-6pm</td>
+		</tr>
+		<tr>
+		<td>Wednesday</td>
+		<td>10am-6pm</td>
+		</tr>
+		<tr>
+		<td>Thursday</td>
+		<td>10am-6pm</td>
+		</tr>
+		<tr>
+		<td>Friday</td>
+		<td>10am-6pm</td>
+		</tr>
+		<tr>
+		<td>Saturday - Sunday</td>
+		<td>Closed</td>
+		</tr>
+		</table>
+	</section>
+	<section class="card special">
+		<p class="special-title">August Special</p>
+		
+	  <h3>Back to school Package</h3>
+		
+	  <p>
+		Signature Facial, Classic Eyelash Extension and Two Face waxes.
+		</p>
+		
+	  <p class="price">
+			$150&nbsp;
+		<span class= "discount">Savings of $54</span>
+		</p>
+		
+		<a href="BookNow.html" class="special-button">
+		Book Special
+		</a>
+		</section>
+		
+	  <section class="card">
+		<h2> Client reviews</h2>
+		<p class="stars">★★★★★</p>
+		<p class="review">
+			“Absolutely the most relaxing experience.
+			My skin has never looked better. Espana is
+			a true artist.”</p>
+			<p class="reviewer">..Samantha L.</p>
+		</section>
+		</aside>
+	<div class="main-content">
+		<figure><img src="images/facial.webp" alt="facial" width="500" height="352">
+		</figure>
+		
+<section class="Welcome">
+<p class="section label">
+	<strong>Welcome To</strong>
+</p>
+<h1>E.spa Esthetics</h1>
+		<p>
+		Hi, I'm Espana a licensed esthetician and the sole heart behind E.spa Esthetics. I built this studio out of a genuine passion for skin care and a deep desire to make every person who walks through my door feel their very best. Since earning my esthetics license in 2024, I have moved with purpose in that same first year, I also earned my lash certification, because I wanted to offer you more from day one.
+			
+		Nestled in the heart of the community, E.spa Esthetics is a private, home-based skin care studio built on one simple belief, that every person deserves to feel beautiful, relaxed, and completely at ease. I believe that every face tells a story, and I am here to help yours shine.
+		
+		I may be early in my career, but what I bring is dedication, attention to detail, and the kind of personal care that only comes from someone who truly loves what she does. When you book with me, you are not just an appointment, you are my only focus.
+		</p>
+</section>
+		
+<div class="service-booking">
+
+		<h3>Ready to Book?</h3>
+
+		<p>
+			Schedule your personalized service today.
+		</p>
+
+		<a href="BookNow.html">Book Your Appointment</a>
+
+	</div>
+</div>
+</main>
+<footer class="site-tooter"> 
+	<div class="footer-top">
+	
+	<section class="footer-business">
+		<div class="footer-logo-area">
+		<img src="images/E. spa logo.png" alt="E. spa logo.png">
+	</div>
+	<div>
+	  <h2>E.spa Esthetics</h2>
+		
+	<p class="footer-slogan">
+	  <p>Relax • Refresh • Renew</p>
+	</p>
+	</div>
+	<p class="footer-description">
+	Boutique skin care studio dedicated to the art
+	of radiant, healthy skin.
+	</p>
+		</section>
+		<section class="footer-section">
+		<h2>Contact</h2>
+     <p> 
+	    <span class="contact-icon">☎</span>
+		 <a href="tel: 5558675309">(555) 867-5309</a>
+	 </p>
+	<p>
+		<span class="contact-icon">✉</span>
+	 <a href="mailto:hello@espaesthetics.com">
+					hello@espaesthetics.com
+		</a>
+	 </p>
+	<p>
+		<span class="contact-icon">⌖</span>
+		123 Bloom Street<br>
+		Oklahoma City, OK 73159
+	</p>
+	</section>
+	
+	<section class="footer-social">
+<h2>Follow Us</h2>
+<div class="social-buttons">
+<a href="#" class="image/instgram.png" aria-label="Visit E.spa Esthetics on Instagram">@e.spaesthetics
+</a>
+
+</div>
+	</section>
+<div class="footer-bottom">
+	<p>Crafted with care for beautiful skin.</p>
+<small>
+	<em>Copyright &copy; 2026 E.spa Esthetics.All rights reserved.</em>
+</small>
+	</div>
+</div>
+</footer>
+</body>
+</html>

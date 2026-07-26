@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+<title>E.spa Esthetics | Book Now</title>
+</head>
+<style>
+		main {
+		color: #392525;
+		position: center;
+		grid-template-columns: 250px 1fr;
+		gap: 45px;
+		max-width: 1500px;
+		margin: auto;
+		padding: 50px 40px;
+	}
+	.logo-area {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+.logo-area img {
+	width: 105px;
+	height: 105px;
+	object-fit: cover;
+}
+
+main.gallery-page {
+	color: #432626;
+	display: block;
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto;
+	padding: 35px;
+	background-color: #FBF6F0;
+	border-radius: 10px;
+}
+
+.gallery-page > h2 {
+	margin: 5 5 15px;
+	color: #392E2A;
+	font-family: Georgia, serif;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.gallery-intro {
+	max-width: 700px;
+	margin: 0 auto 40px;
+	color: #645B58;
+	font-size: 17px;
+	font-weight: normal;
+	line-height: 1.7;
+	text-align: center;
+}
+
+.gallery-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 25px;
+	width: 100%;
+}
+
+.gallery-item {
+	margin: 0;
+	padding: 12px;
+	background-color: #FFFDFC;
+	border: 1px solid #E3D4CC;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.gallery-item img {
+	display: block;
+	width: 100%;
+	height: 320px;
+	object-fit: cover;
+	border-radius: 5px;
+	transition: transform 0.3s ease;
+}
+
+
+.gallery-item img:hover {
+	transform: scale(1.04);
+}
+
+.gallery-item figcaption {
+	padding: 15px 5px 8px;
+	color: #392E2A;
+	font-family: Georgia, serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.gallery-booking {
+	margin-top: 50px;
+	padding: 35px;
+	background-color: #EADDD6;
+	border: 1px solid #DDCBC2;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.gallery-booking h3 {
+	margin: 0 0 10px;
+	color: #392E2A;
+	font-family: Georgia, serif;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.gallery-booking p {
+	margin: 0 0 20px;
+	color: #645B58;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.service-booking {
+	margin-top: 50px;
+	padding: 35px;
+	background-color: #EADDD6;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.service-booking h3 {
+	margin-top: 0;
+	color: #392E2A;
+}
+
+.service-booking a {
+	display: inline-block;
+	padding: 12px 25px;
+	color: white;
+	background-color: #A97E64;
+	border-radius: 7px;
+	text-decoration: none;
+}
+
+.service-booking a:hover {
+	background-color: #895F4C;
+}
+
+@media screen and (max-width: 600px) {
+
+	main.gallery-page {
+		width: 94%;
+		padding: 20px 15px;
+	}
+
+	.gallery-page > h2 {
+		font-size: 32px;
+	}
+
+	.gallery-intro {
+		font-size: 16px;
+	}
+
+	.gallery-container {
+		gap: 18px;
+	}
+
+	.gallery-item {
+		padding: 8px;
+	}
+
+	.gallery-item img {
+		height: 280px;
+	}
+
+	.gallery-item figcaption {
+		font-size: 18px;
+	}
+
+	.gallery-booking {
+		padding: 30px 20px;
+	}
+}
+</style>
+<body>
+	<header>
+	
+	<h1>E. Spa Esthetics</h1>
+    <div class="slogan">
+		Relax <span>•</span> Refresh <span>•</span> Renew</div>
+	
+  <nav class="nav-menu">
+    <a href="index.html">Home</a>&nbsp; 
+    <a href="Services.html">Services</a> &nbsp; 
+    <a href="Gallery.html">Gallery</a>&nbsp; 
+    <a href="Contact.html">Contact</a>&nbsp;  
+    <a href="BookNow.html" class="book-now">Book Now</a>
+  </nav>
+	
+	<div class="logo-area">
+		<img src="images/E. spa logo.png" alt="E.spa Esthetics logo">
+	</div>
+	
+	</header>
+	
+	<main class="gallery-intro">
+		<h2>Gallery</h2>
+		<p>Take a look at some of my skin care, lash and beauty services.</p>
+		
+	<div class="gallery-container">
+		<figure class="gallery-item">
+			<a href="images/facial 5.jpeg"
+		   target="_blank"
+		   rel="noopener">
+				<img src="images/facial 5.jpeg" alt="Client receiving a facial procedure"></a>
+			<figcaption>
+			Dermasuction
+			</figcaption>
+			
+			</figure>
+		<figure class="gallery-item">
+			<a href="images/facial 3.webp"
+		   target="_blank"
+		   rel="noopener">
+				<img src="images/facial 3.webp" alt="Face mask"></a>
+			<figcaption>
+			Appling Face Mask
+			</figcaption>
+		</figure>
+		
+		<figure class="gallery-item">
+			<a href="images/facial 2.webp"
+		   target="_blank"
+		   rel="noopener">
+				<img src="images/facial 2.webp" alt="Facial massage"></a>
+			<figcaption>
+			Facial Massage
+			</figcaption>
+		</figure>
+		
+		<figure class="gallery-item">
+			<a href="images/facial 2.webp"
+		   target="_blank"
+		   rel="noopener">
+				<img src="images/wax 1.webp" alt="Leg waxing"></a>
+			<figcaption>
+			Leg waxing
+			</figcaption>
+		</figure>
+		
+		<figure class="gallery-item">
+			<a href="images/waxingeyebrow.jpeg"
+		   target="_blank"
+		   rel="noopener">
+				<img src="images/waxingeyebrow.jpeg" alt="Eyebrow waxing"></a>
+			<figcaption>
+			Eyebrow waxing
+			</figcaption>
+		</figure>
+		
+		<figure class="gallery-item">
+			<a href="images/armpitwax.jpeg"
+		   target="_blank"
+		   rel="noopener">
+				<img src="images/armpitwax.jpeg" alt="armpit waxing"></a>
+			<figcaption>
+			Armpit waxing
+			</figcaption>
+		</figure>
+		
+		<figure class="gallery-item">
+			<a href="images/lash extention.jpeg"
+		   target="_blank"
+		   rel="noopener">
+				<img src="images/lash extention.jpeg" alt="Lash Extention"></a>
+			<figcaption>
+			Lash Extention
+			</figcaption>
+		</figure>
+		
+		<figure class="gallery-item">
+			<a href="images/differanceinlashes.jpeg"
+		   target="_blank"
+		   rel="noopener">
+			<img src="images/differanceinlashes.jpeg" alt="Lash Extention"></a>
+			<figcaption>
+			Lash Differance
+			</figcaption>
+		</figure>
+		
+		<figure class="gallery-item">
+			<a href="images/completed lashes.jpeg"
+		   target="_blank"
+		   rel="noopener">
+				<img src="images/completed lashes.jpeg" alt="Completed Lashes"></a>
+			<figcaption>
+			Completed Lashes
+			</figcaption>
+		</figure>
+		
+		<figure class="gallery-item">
+			<a href="images/roomphoto1.png"
+		   target="_blank"
+		   rel="noopener">
+				<img src="images/roomphoto1.png" alt="Room set up"></a>
+			<figcaption>
+			Product For Sell
+			</figcaption>
+		</figure>
+		
+		<figure class="gallery-item">
+			<a href="images/image6room.png"
+		   target="_blank"
+		   rel="noopener">
+				<img src="images/image6room.png" alt="Bed"></a>
+			<figcaption>
+			Bed and Lighting
+			</figcaption>
+		</figure>
+		</div>
+
+</main>
+
+	<div class="service-booking">
+
+		<h3>Love What You See?</h3>
+
+		<p>
+			Schedule your personalized service today.
+		</p>
+
+		<a href="BookNow.html">Book Your Appointment</a>
+
+	</div>
+<footer class="site-tooter"> 
+	<div>
+	<section>
+	  <h2>E.spa Esthetics</h2>
+		
+	<p class="footer-slogan">
+	  <p>Relax • Refresh • Renew</p>
+	</p>
+
+	<p class="footer-description">
+	Boutique skin care studio dedicated to the art
+	of radiant, healthy skin.
+	</p>
+		</section>
+		<section class="footer-section">
+<h2>Contact</h2>
+     <p> 
+	    <span class="contact-icon">☎</span>
+		 <a href="tel: 5558675309">(555) 867-5309</a>
+	 </p>
+	<p>
+		<span class="contact-icon">✉</span>
+	 <a href="mailto:hello@espaesthetics.com">
+					hello@espaesthetics.com
+		</a>
+	 </p>
+	<p>
+		<span class="contact-icon">⌖</span>
+		123 Bloom Street<br>
+		Oklahoma City, OK 73159
+	</p>
+	</section>
+	
+	<section class="footer-social">
+<h2>Follow Us</h2>
+<div class="social-buttons">
+<a href="#" class="image/instgram.png" aria-label="Visit E.spa Esthetics on Instagram">@e.spaesthetics
+</a>
+
+</div>
+	</section>
+<div class="footer-bottom">
+	<p>Crafted with care for beautiful skin.</p>
+<small>
+	<em>Copyright &copy; 2026 E.spa Esthetics.All rights reserved.</em>
+</small>
+	</div>
+</div>
+</footer>
+</body>
+</html>
